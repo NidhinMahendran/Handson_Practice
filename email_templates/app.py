@@ -17,7 +17,7 @@ mail = Mail(app)
 @app.route("/")
 def index():
    msg = Message('Hello', recipients = ['nidhin@proaibots.com'])
-   msg.html = render_template('email.html')
+   msg.html = render_template('schedule_outcome.html')
    mail.send(msg)
    return "Mail Sent Successfully"
 
